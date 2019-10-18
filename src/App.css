@@ -1,17 +1,30 @@
+body{
+  background-color: #282c34;
+}
+
+.authContainer{
+  display: inline-block;
+  float: right;
+}
+
 .App {
   text-align: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .App-logo {
   height: 40vmin;
 }
+.logo-container{
+  position: relative;
+  float: left;
+}
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
