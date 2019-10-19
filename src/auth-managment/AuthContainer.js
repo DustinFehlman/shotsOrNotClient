@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Register from "./Register";
 import Login from "./Login";
+import {signOut} from "../auth/signinHelpers";
 
 export default function AuthContainer({user, setUser}){
     const [authView, setAuthView]= useState("login");
@@ -13,7 +14,7 @@ export default function AuthContainer({user, setUser}){
             {user && <div>
                 {"Hello, " + user.attributes.preferred_username}
                 <br/>
-                <button onClick={() => {setAuthView("login"); setUser(null);}}>Log Out</button>
+                <button onClick={() => {setAuthView("login"); signOut(setUser);}}>Log Out</button>
             </div>}
         </div>)
 }

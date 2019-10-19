@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 import AuthContainer from "./auth-managment/AuthContainer";
+import ProductViewContainer from "./product/ProductViewContainer";
 
 function App() {
     const [user, setUser] = useState(null);
@@ -12,6 +13,11 @@ function App() {
           </div>
           <AuthContainer user={user} setUser={setUser}/>
       </header>
+
+        <ProductViewContainer/>
+        <footer className={"helpInfo"}>
+            <p>Please enjoy responsibly. Need help? <a className={"helpLink"} href={"https://www.samhsa.gov/find-treatment"}>Click Here</a></p>
+        </footer>
     </div>
   );
 }

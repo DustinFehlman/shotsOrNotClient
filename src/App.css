@@ -2,6 +2,76 @@ body{
   background-color: #282c34;
 }
 
+.productListCard{
+  padding-bottom: 40px;
+}
+.productPageImg{
+  display: inline-block;
+}
+
+.productPageInfoContainer{
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    top: 90px
+}
+.reviewInfo{
+    width: 300px;
+}
+.reviewsContainer{
+    position: relative;
+    top:100px;
+}
+.rating{
+  display: inline-block;
+  position: relative;
+  top: -100px;
+  left: 100px;
+  text-align: center;
+}
+
+.reviewList{
+  padding: 64px;
+  padding-top: 30px;
+}
+.helpInfo{
+  color:white;
+  top: -330px;
+  position: relative;
+}
+
+.helpLink{
+  color: orange;
+}
+.reviewRating{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  left: 80%;
+  top: -100px;
+}
+.ratingNumber{
+  margin-top: 10px;
+}
+
+.ratingLabel{
+  margin-bottom: 0;
+}
+
+.productPage{
+  text-align: left;
+  padding: 20px
+}
+
+.view{
+  background-color: white;
+  width: 80%;
+  height: 90%;
+  position: relative;
+  top: -380px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .authContainer{
   display: inline-block;
   float: right;
